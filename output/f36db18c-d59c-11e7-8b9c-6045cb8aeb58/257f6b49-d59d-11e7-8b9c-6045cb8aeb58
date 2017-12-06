@@ -1,0 +1,15 @@
+So first, Vicky's shield has to have some sort of bottom threshold at which point it can absorb force without breaking: for example, she can walk without every footfall destroying her shield, and you could probably e.g. slap her and do nothing but mess up your hand. Depending on how her power behaves, either her shield never drops, or it drops for such a minute period of time that it's effectively always up—for weak forces, these are essentially the same thing.
+
+Now, it's established that her shield can sustain a single attack over a longer duration of time, in exchange for a longer recharge time. This is pretty intuitive if the attack is an energy beam or torrent of high-pressure water, etc. but in real life technically *all* attacks fall into this category: there is no exact moment when a punch or bullet transfers all of its force. There is always a time factor—if you were to view any object striking Vicky's shield in super slow-motion, it would be obvious that her shield is staying up until the object has expended all of its force over a certain non-instant duration. In other words, all forces are to some extent "sustained" in the same way that an energy beam is.
+
+From this perspective, Vicky's shield is like a perfectly immovable object while forces are acting on it, and then it ceases to exist when it has finished applying Newton's "equal and opposite reaction", e.g. stopped whatever is striking it. Then it takes some unknown time to recharge, after which it reappears.
+
+There are two basic ways that her shield could function:
+ - Her shield expends energy proportional to how hard it is struck
+ - Her shield expends energy proportional to the time it is active
+
+Only the latter is consistent with a perfectly invulnerable shield, because the former implies a strong enough hit could shatter it, but there has to be at least some of the former for the shield's "non-breaking" baseline durability to function. I guess you could view it as a toggle state: a relatively cheap always-on shield that absorbs weak forces but transitions to a costly invulnerable state when a much stronger force would otherwise break the weak shield. After the invulnerable state is used, the shield drops entirely to recharge as quickly as possible.
+
+Also: if the shield can tank variable-duration hits but *always* drops completely, that implies it's sometimes dropping when it would still have had the energy to stay up in at least some form. Either the shard figures that dropping the shield totally is the most efficient way to protect Vicky (which does in some ways make sense), or it's just being a real ass about its conflict management and data-collection.
+
+Note that while this seems pretty tidy, this is merely reverse-engineered and thus subject to being shredded into fine particulate matter at the next word of god on the topic.

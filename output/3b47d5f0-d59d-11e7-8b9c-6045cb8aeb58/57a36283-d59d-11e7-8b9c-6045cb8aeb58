@@ -1,0 +1,36 @@
+<field name="name">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="dataType" xsi:type="string">text</item>
+                <item name="label" xsi:type="string" translate="true">Some Label</item>
+                <item name="formElement" xsi:type="string">input</item>
+                <item name="source" xsi:type="string">something_here</item>
+                <item name="sortOrder" xsi:type="number">10</item>
+                <item name="dataScope" xsi:type="string">name</item>
+                <item name="notice" xsi:type="string" translate="true">Enter something here</item>
+                <item name="validation" xsi:type="array">
+                    <item name="required-entry" xsi:type="boolean">true</item>
+                </item>
+            </item>
+        </argument>
+    </field>
+	
+<item name="readonly" xsi:type="boolean">true</item>
+	
+<field name="is_active">
+    <argument name="data" xsi:type="array">
+        <item name="config" xsi:type="array">
+            <item name="label" xsi:type="string">Status</item>
+            <item name="dataType" xsi:type="string">number</item>
+            <item name="formElement" xsi:type="string">checkbox</item>
+            <item name="source" xsi:type="string">vendor_rules_rule_form.vendor_rules_rule_form_data_source.is_active</item>
+            <item name="prefer" xsi:type="string">toggle</item>
+            <item name="disabled" xsi:type="boolean">true</item>
+            <item name="valueMap" xsi:type="array">
+                <item name="true" xsi:type="string">1</item>
+                <item name="false" xsi:type="string">0</item>
+            </item>
+            <item name="sortOrder" xsi:type="number">12</item>
+        </item>
+    </argument>
+</field>

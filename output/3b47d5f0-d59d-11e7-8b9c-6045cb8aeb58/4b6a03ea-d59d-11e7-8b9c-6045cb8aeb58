@@ -1,0 +1,66 @@
+trigger prevent on Quote (before update) {
+
+id cuser = userinfo.getuserid(); 
+id iduser;
+id profilo = userinfo.getProfileId();
+id profiloadmin = [select id from profile where name='System Administrator'].id;
+
+if (profilo==profiloadmin) {
+    return;
+}
+
+for (quote q : trigger.new) {
+    opportunity opp = [select stagename from opportunity where id =:q.opportunityid];
+     try {
+    iduser = [select userid from opportunityteammember
+         where teammemberrole='Proposal' and opportunityid=:q.opportunityid and userid=:cuser].userid;
+    } catch (exception e) {
+
+
+    }
+
+     if (opp.stagename=='Proposal' && iduser==null) {
+
+        q.adderror('Trattativa in fase PROPOSAL: impossibile modificare');
+    }
+}
+	
+@isTest
+private class Testprevent {
+
+    static testmethod void test1(){
+        test.startTest();
+
+            Profile p = [SELECT Id FROM Profile WHERE Name='System Administrator']; 
+            User u = new User(Alias = 'standt', Email='standarduser@testorg.com', 
+            EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
+            LocaleSidKey='en_US', ProfileId = p.Id, 
+            TimeZoneSidKey='America/Los_Angeles', UserName='stan@testorg.com');
+            Insert u;
+
+
+
+        Opportunity op= new Opportunity();
+        op.Name= 'abc';
+        op.StageName='Open';
+        op.Trattativa__c = 'Automotive';
+        op.CloseDate = date.valueOf('2017-11-12');
+        op.Tipo_di_Trattativa__c = 'Cross Selling';
+        op.Volumi_Sinistri_S__c = '<5000';
+        insert op;
+
+        OpportunityTeamMember otm = new OpportunityTeamMember (OpportunityId =  op.Id,UserId = u.Id,TeamMemberRole = 'role');
+        insert otm;
+
+        Quote q = new Quote();
+        q.Name='abc';
+        q.Pricing_matrix__c = true;
+        q.Pricing__c = 1000;
+        q.OpportunityId = op.Id;
+        insert q;
+
+
+        test.stopTest();
+    }
+
+}

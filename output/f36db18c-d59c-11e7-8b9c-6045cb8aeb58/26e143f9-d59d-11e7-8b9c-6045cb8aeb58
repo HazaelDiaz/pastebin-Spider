@@ -1,0 +1,141 @@
+gridView = (GridView) findViewById(R.id.gridView1);
+String[] arrayEmpty = new String[] {"", "", "", "", "", "", "", "", ""};
+ArrayList<String> listEmpty = new ArrayList<String>(Arrays.asList(arrayEmpty));
+gridView.setAdapter(new ArrayAdapter<String>(this,R.layout.list_item,list));
+	
+<?xml version="1.0" encoding="utf-8"?>
+	
+<TableRow android:id="@+id/tableRow1"
+    android:layout_width="match_parent"
+    android:background="#999999"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <GridView
+    android:id="@+id/gridView1"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+    </GridView>
+
+    <GridView
+    android:id="@+id/gridView2"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+</GridView>
+
+<GridView
+    android:id="@+id/gridView3"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+</GridView>
+	
+<TableRow android:id="@+id/tableRow2"
+    android:layout_width="match_parent"
+    android:background="#999999"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <GridView
+    android:id="@+id/gridView4"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+    </GridView>
+
+    <GridView
+    android:id="@+id/gridView5"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+</GridView>
+
+<GridView
+    android:id="@+id/gridView6"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+</GridView>
+	
+<TableRow android:id="@+id/tableRow3"
+    android:layout_width="match_parent"
+    android:background="#999999"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_marginBottom="15dp">
+
+    <GridView
+    android:id="@+id/gridView7"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+    </GridView>
+
+    <GridView
+    android:id="@+id/gridView8"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+</GridView>
+
+<GridView
+    android:id="@+id/gridView9"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="#5C5C5C"
+    android:layout_weight="1"
+    android:numColumns="3" >
+</GridView>
+	
+<TableRow android:layout_weight="1" android:layout_height="match_parent">
+    <Button
+        android:id="@+id/solve_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:text="@string/solve" />
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:text="@string/_clear" />
+</TableRow>

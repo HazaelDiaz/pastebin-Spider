@@ -1,0 +1,47 @@
+#EXTM3U
+#EXTINF:-1,TV SIM
+http://stmv4.euroti.com.br:1935/tvsimvitoria/tvsimvitoria/live.m3u8
+#EXTINF:-1,TV Tepic
+rtmp://216.227.135.186:1935/tvnayarit/videotvnayarit
+#EXTINF:-1,TV Tepic
+rtsp://216.227.135.186:1935/tvnayarit/videotvnayarit
+#EXTINF:-1,TV Tepic
+rtmp://216.227.135.186/tvnayarit/videotvnayarit
+#EXTINF:-1,TV Terceiro Anjo
+rtmp://streamer1.streamhost.org:1935/salive/GMI3anjoh
+#EXTINF:-1,TV Terceiro Anjo
+rtsp://streamer1.streamhost.org:1935/salive/GMI3anjoh
+#EXTINF:-1,TV TERCEIRO ANJO
+rtmp://streamer1.streamhost.org/salive/GMI3anjoh
+#EXTINF:-1,TV VERBO
+rtmp://streaming30.sitehosting.com.br:1935/tvverbo/tvverbo
+#EXTINF:-1,TV VERBO
+rtsp://streaming30.sitehosting.com.br:1935/tvverbo/tvverbo
+#EXTINF:-1,TVC BH
+rtmp://wse3.player.tv.br:1935/tvcbh/tvcbh
+#EXTINF:-1,TV WEB Parana
+rtmp://wse3.player.tv.br:1935/tvwebparana/tvwebparana
+#EXTINF:-1,TV WEB BAHIA
+rtmp://streaming63.sitehosting.com.br:1935/xcfilmes/xcfilmes
+#EXTINF:-1,TV WEB BAHIA
+rtsp://streaming63.sitehosting.com.br:1935/xcfilmes/xcfilmes
+#EXTINF:-1,TVC BH
+rtmp://wse3.player.tv.br:1935/tvcbh/tvcbh
+#EXTINF:-1,TV WEB Parana
+rtmp://wse3.player.tv.br:1935/tvwebparana/tvwebparana
+#EXTINF:-1,TVCOM
+rtmp://srv6.zoeweb.tv:1935/z883-live/stream
+#EXTINF:-1,Tvu Gacha
+rtmp://srv9.zoeweb.tv:1935/zw923/stream
+#EXTINF:-1,TV PORTAL DA FEIRA
+rtmp://173.236.10.10:1935/portaldafeira/portaldafeira
+#EXTINF:-1,TV PORTAL DA FEIRA
+rtsp://173.236.10.10:1935/portaldafeira/portaldafeira
+#EXTINF:-1,TV RBC
+http://stmv1.srvstm.com/alexandre3116/alexandre3116/playlist.m3u8
+#EXTINF:-1,Tv RBC Salvador
+rtsp://stmv1.srvstm.com/alexandre3116/alexandre3116
+#EXTINF:-1,TV REGIONAL
+rtmp://painel.serveron.com.br:1935/tvregional/tvregional
+#EXTINF:-1,TV REGIONAL
+rtsp://painel.serveron.com.br:1935/tvregional/tvregional

@@ -1,0 +1,165 @@
+#Fake data
+m <- matrix(runif(256*65536), nrow = 256)
+#AS a data.frame
+system.time(write.csv(as.data.frame(m), "dataframe.csv"))
+#----------
+#   user  system elapsed 
+# 319.53   13.65  333.76 
+
+#As a matrix
+system.time(write.csv(m, "matrix.csv"))
+#----------
+#   user  system elapsed 
+#  52.43    0.88   53.59 
+
+#Using write.matrix()
+require(MASS)
+system.time(write.matrix(m, "writematrix.csv"))
+#----------
+#   user  system elapsed 
+# 113.58   59.12  172.75
+	
+#This is a data.frame
+m2 <- as.data.frame(matrix(runif(256*65536), nrow = 256))
+#This is still 6x slower
+system.time(write.csv(m2, "dataframe.csv"))
+#   user  system elapsed 
+# 317.85   13.95  332.44
+#This even includes the overhead in converting to as.matrix in the timing 
+system.time(write.csv(as.matrix(m2), "asmatrix.csv"))
+#   user  system elapsed 
+#  53.67    0.92   54.67
+	
+m3 <- as.matrix(m2)
+system.time(as.data.frame(m3))
+#   user  system elapsed 
+#   0.77    0.00    0.77
+	
+write.table can be slow for data frames with large numbers (hundreds or more) of
+columns: this is inevitable as each column could be of a different class and so must be
+handled separately. If they are all of the same class, consider using a matrix instead.
+	
+system.time(save(m2, file = "thisisfast.RData"))
+#   user  system elapsed 
+#  21.67    0.12   21.81
+	
+# -----------------------------------------------------------------------------
+# function  | object type |  output type | compress= | Runtime | File size |
+# -----------------------------------------------------------------------------
+# save      |      matrix |    binary    |   FALSE   |    0.3s |    134MB  |
+# save      |  data.frame |    binary    |   FALSE   |    0.4s |    135MB  |
+# feather   |  data.frame |    binary    |   FALSE   |    0.4s |    139MB  |
+# fwrite    |  data.table |    csv       |   FALSE   |    1.0s |    302MB  |
+# save      |      matrix |    binary    |   TRUE    |   17.9s |     89MB  |
+# save      |  data.frame |    binary    |   TRUE    |   18.1s |     89MB  |
+# write.csv |      matrix |    csv       |   FALSE   |   21.7s |    302MB  |
+# write.csv |  data.frame |    csv       |   FALSE   |  121.3s |    302MB  |
+	
+library(data.table)
+NN <- 5e6 # at this number of rows, the .csv output is ~800Mb on my machine
+set.seed(51423)
+DT <- data.table(
+  str1 = sample(sprintf("%010d",1:NN)), #ID field 1
+  str2 = sample(sprintf("%09d",1:NN)),  #ID field 2
+  # varying length string field--think names/addresses, etc.
+  str3 = replicate(NN,paste0(sample(LETTERS,sample(10:30,1),T), collapse="")),
+  # factor-like string field with 50 "levels"
+  str4 = sprintf("%05d",sample(sample(1e5,50),NN,T)),
+  # factor-like string field with 17 levels, varying length
+  str5 = sample(replicate(17,paste0(sample(LETTERS, sample(15:25,1),T),
+      collapse="")),NN,T),
+  # lognormally distributed numeric
+  num1 = round(exp(rnorm(NN,mean=6.5,sd=1.5)),2),
+  # 3 binary strings
+  str6 = sample(c("Y","N"),NN,T),
+  str7 = sample(c("M","F"),NN,T),
+  str8 = sample(c("B","W"),NN,T),
+  # right-skewed (integer type)
+  int1 = as.integer(ceiling(rexp(NN))),
+  num2 = round(exp(rnorm(NN,mean=6,sd=1.5)),2),
+  # lognormal numeric that can be positive or negative
+  num3 = (-1)^sample(2,NN,T)*round(exp(rnorm(NN,mean=6,sd=1.5)),2))
+
+# -------------------------------------------------------------------------------
+# function  |   object   | out |        other args         | Runtime  | File size |
+# -------------------------------------------------------------------------------
+# fwrite    | data.table | csv |      quote = FALSE        |   1.7s   |  523.2MB  |
+# fwrite    | data.frame | csv |      quote = FALSE        |   1.7s   |  523.2MB  |
+# feather   | data.frame | bin |     no compression        |   3.3s   |  635.3MB  |
+# save      | data.frame | bin |     compress = FALSE      |  12.0s   |  795.3MB  |
+# write.csv | data.frame | csv |    row.names = FALSE      |  28.7s   |  493.7MB  |
+# save      | data.frame | bin |     compress = TRUE       |  48.1s   |  190.3MB  |
+# -------------------------------------------------------------------------------
+	
+require(data.table)
+require(microbenchmark)
+require(feather)
+ns <- as.integer(10^seq(2, 6, length.out = 25))
+DTn <- function(nn)
+    data.table(
+          str1 = sample(sprintf("%010d",1:nn)),
+          str2 = sample(sprintf("%09d",1:nn)),
+          str3 = replicate(nn,paste0(sample(LETTERS,sample(10:30,1),T), collapse="")),
+          str4 = sprintf("%05d",sample(sample(1e5,50),nn,T)),
+          str5 = sample(replicate(17,paste0(sample(LETTERS, sample(15:25,1),T), collapse="")),nn,T),
+          num1 = round(exp(rnorm(nn,mean=6.5,sd=1.5)),2),
+          str6 = sample(c("Y","N"),nn,T),
+          str7 = sample(c("M","F"),nn,T),
+          str8 = sample(c("B","W"),nn,T),
+          int1 = as.integer(ceiling(rexp(nn))),
+          num2 = round(exp(rnorm(nn,mean=6,sd=1.5)),2),
+          num3 = (-1)^sample(2,nn,T)*round(exp(rnorm(nn,mean=6,sd=1.5)),2))
+
+count <- data.table(n = ns,
+                    c = c(rep(1000, 12),
+                          rep(100, 6),
+                          rep(10, 7)))
+
+mbs <- lapply(ns, function(nn){
+  print(nn)
+  set.seed(51423)
+  DT <- DTn(nn)
+  microbenchmark(times = count[n==nn,c],
+               write.csv=write.csv(DT, "writecsv.csv", quote=FALSE, row.names=FALSE),
+               save=save(DT, file = "save.RData", compress=FALSE),
+               fwrite=fwrite(DT, "fwrite_turbo.csv", quote=FALSE, sep=","),
+               feather=write_feather(DT, "feather.feather"))})
+
+png("microbenchmark.png", height=600, width=600)
+par(las=2, oma = c(1, 0, 0, 0))
+matplot(ns, t(sapply(mbs, function(x) {
+  y <- summary(x)[,"median"]
+  y/y[3]})),
+  main = "Relative Speed of fwrite (turbo) vs. rest",
+  xlab = "", ylab = "Time Relative to fwrite (turbo)",
+  type = "l", lty = 1, lwd = 2, 
+  col = c("red", "blue", "black", "magenta"), xaxt = "n", 
+  ylim=c(0,25), xlim=c(0, max(ns)))
+axis(1, at = ns, labels = prettyNum(ns, ","))
+mtext("# Rows", side = 1, las = 1, line = 5)
+legend("right", lty = 1, lwd = 3, 
+       legend = c("write.csv", "save", "feather"),
+       col = c("red", "blue", "magenta"))
+dev.off()
+	
+df <- as.data.frame(matrix(runif(256*65536), nrow = 256))
+
+system.time(feather::write_feather(df, "df.feather"))
+#>   user  system elapsed 
+#>  0.237   0.355   0.617
+	
+system.time(saveRDS(df, "df.rds"))
+#>   user  system elapsed 
+#> 17.363   0.307  17.856
+	
+system.time(saveRDS(df, "df.rds", compress = FALSE))
+#>   user  system elapsed 
+#>  0.181   0.247   0.473
+	
+system.time(readRDS("df.rds"))
+#>   user  system elapsed 
+#>  0.198   0.090   0.287 
+
+system.time(feather::read_feather("df.feather"))
+#>   user  system elapsed 
+#>  0.125   0.060   0.185

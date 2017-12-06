@@ -1,0 +1,67 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="CNN Español" tvg-logo="" group-title="1.Latinos",CNN Español (US)
+http://149.56.26.6:25461/live/dreamscanales/123456/15881.m3u8|user-agent=iphone
+#EXTINF:-1 tvg-id="" tvg-name="Telemundo" tvg-logo="http://www.underconsideration.com/brandnew/archives/telemundo_followup_logo_detail.jpg" group-title="1.Latinos",Telemundo (US)
+http://149.56.26.6:25461/live/dreamscanales/123456/610.m3u8|user-agent=iphone
+#EXTINF:-1 tvg-id="" tvg-name="AR: Canal 9" tvg-logo="http://www.chileiptv.xyz/logos/237.jpg" group-title="EL NUEVE",Canal 9 (W)
+http://ar.watcha.live/ch5/full.m3u8|User-agent=iPhone
+#EXTINF:-1 tvg-id="" tvg-name="AR: TELEFE" tvg-logo="http://www.chileiptv.xyz/logos/239.jpg" group-title="TELEFE",TELEFE (W)
+http://ar.watcha.live/ch6/full.m3u8|User-agent=iPhone
+#EXTINF:-1 tvg-id="" tvg-name="TV PUBLICA" tvg-logo="http://www.agenciacta.org/IMG/jpg/TvPublicaLogo.jpg" group-title="TV PUBLICA",TV PUBLICA (W)
+http://ar.watcha.live/ch4/full.m3u8|User-agent=iPhone
+#EXTINF:-1 tvg-id="" tvg-name="AR: America TV" tvg-logo="http://www.iptvroku.com/logos/america.jpg" group-title="AMERICA",AR: America TV (W)
+http://ar.watcha.live/ch3/full.m3u8|User-agent=iPhone
+#EXTINF:-1 tvg-id="" tvg-name="TN" tvg-logo="http://3.bp.blogspot.com/-d0WQfjhe5yA/ULgFqt1rKnI/AAAAAAAAXoY/_6BhXfw9-DY/s1600/tn.png" group-title="TN",TN (D)
+http://prepublish.f.qaotic.net/a04/ngrp:tn_live01-100083_all/Playlist.m3u8|Referer=http://vmf.edge-apps.net
+#EXTINF:-1 tvg-id="America24.ar" tvg-name="A 24 HD" tvg-logo="http://iptv61w.com/logos/a24.jpg" group-title="A 24 HD",A 24 (W)
+http://ar.watcha.live/ch2/full.m3u8|User-agent=iPhone
+#EXTINF:-1 tvg-id="El Trece HD" tvg-name="Canal 13 HD (Arg)" tvg-logo="http://mitvenvivo.org/wp-content/uploads/et_temp/CANAL-13-11-14322_200x200.jpg" group-title="EL TRECE",Canal 13 (W)
+http://ar.watcha.live/ch7/full.m3u8|User-agent=iPhone
+#EXTINF:-1,ARGENTINA:Canal 4 Jujuy www.tecnowillblog.wordpress.com
+http://streaming.wirenetserver.com.ar:1935/canal4/live_1/playlist.m3u8
+#EXTINF:-1,ARGENTINA:Canal 4 Posadas
+http://184.154.28.210:1935/canal4/canal4/live.m3u8
+#EXTINF:-1,ARGENTINA:Canal 9 Salta www.tecnowillblog.wordpress.com
+http://panel.dattalive.com:1935/8250/8250/playlist.m3u8
+#EXTINF:-1,ARGENTINA:Canal 26 Buenos Aires
+http://200.115.193.177/live/26hd-720/.m3u8
+#EXTINF:-1,ARGENTINA:Canal 26 Buenos Aires* www.tecnowillblog.wordpress.com
+http://live-edge01.telecentro.net.ar:1935/live/26hd-720/livestream.m3u8
+#EXTINF:-1,ARGENTINA:Canal 79 Mar del Plata www.tecnowillblog.wordpress.com
+http://painel.serveron.com.br:1935/8168/8168/live.m3u8
+#EXTINF:-1,ARGENTINA:Canal Provincial San Miguel
+http://www.trimi.com.ar/provincial/streaming/mystream.m3u8
+#EXTINF:-1,ARGENTINA:Cool 103.7
+http://ar.solumedia.com.ar:1935/cool/hd/playlist.m3u8
+#EXTINF:-1,ARGENTINA:CPE TV Santa Rosa
+http://live-19.viewer.dacast.com:80/i/dclive_1@336785/master.m3u8
+#EXTINF:-1,ARGENTINA:DeporTV
+http://186.33.227.198/DXTV/smil:DXTV.smil/playlist.m3u8
+#EXTINF:-1,ARGENTINA:Encuentro
+http://lsdencuentrohls-lh.akamaihd.net/i/encuentrohls_1@96967/master.m3u8
+#EXTINF:-1,ARGENTINA:ESPN Radio
+http://espnsslarugby-i.akamaihd.net/hls/live/225068/rugbytest/64/64.m3u8
+#EXTINF:-1,ARGENTINA:Garage TV
+http://186.0.233.76:1935/Garage/smil:garage.smil/master.m3u8
+#EXTINF:-1,ARGENTINA:Music Top
+http://live-edge01.telecentro.net.ar/live/msctphd-720/playlist.m3u8
+#EXTINF:-1,ARGENTINA:Pakapaka
+http://lsdencuentrohls-lh.akamaihd.net/i/PKPKHLS_1@198010/master.m3u8
+#EXTINF:-1,ARGENTINA:Power HD
+http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
+#EXTINF:-1,ARGENTINA:Qm Noticias
+http://qmnoticiashls-lh.akamaihd.net/i/qmnoticiasTEST_hls@324831/master.m3u8
+#EXTINF:-1,ARGENTINA:Radio One
+http://server5.stweb.tv/radioone/live/playlist.m3u8
+#EXTINF:-1,ARGENTINA:TDC Online Firmat
+http://painel.serveron.com.br:1935/8166/8166/live.m3u8
+#EXTINF:-1,ARGENTINA:Tec TV
+http://tectvhls-lh.akamaihd.net/i/tectvHLS_1@334993/master.m3u8
+#EXTINF:-1,ARGENTINA:Telemax
+http://live-edge01.telecentro.net.ar/live/smil:tlx.smil/master.m3u8
+#EXTINF:-1,ARGENTINA:Telpin Teve Pinamar
+http://201.219.100.30:1935/telpintv/ttv.stream_720p/playlist.m3u8
+#EXTINF:-1,ARGENTINA:TELEFE.
+http://ar.watcha.live/ch6/hi.m3u8
+#EXTINF:-1,ARGENTINA:CANAL 26 AR
+http://live-edge01.telecentro.net.ar/live/26hd-360/playlist.m3u8

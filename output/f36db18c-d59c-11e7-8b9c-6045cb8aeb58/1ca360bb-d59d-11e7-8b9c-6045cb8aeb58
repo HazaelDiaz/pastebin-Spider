@@ -1,0 +1,5 @@
+between 
+
+SELECT billno FROM invoice ORDER BY BINARY billno DESC LIMIT 1;
+and 
+SELECT MAX(billno) AS billno FROM invoice;

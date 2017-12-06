@@ -1,0 +1,1 @@
+request.getRequestDispatcher("myJsp.jsp").forward(request,response);

@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+#include <ctype.h>
+#include "filter.c"
+#include "timing.c"
+
+
+
+extern double getTime();
+
+int main(int argc, char *argv[])
+{
+	int *width = malloc(sizeof(int)) , *height = malloc(sizeof(int)),  *max = malloc(sizeof(int));
+	filter type;
+	
+	
+	if (argc != 5){
+	  printf( "Usage: ./denoise input.ppm output.ppm N F" );
+	  return 0;
+	}
+	
+	if (fopen(argv[1], "r") == NULL){
+		printf("Error: File is unable to be opened");
+		return 0;
+	}	
+	
+	/*if (isdigit(argv[3]) == 0 ){
+		printf( "Usage: ./denoise input.ppm output.ppm Window Filter" );
+		return 0;
+		}*/
+	
+	if (strcmp(argv[4], "A") == 0){
+	
+		type = MEAN;
+		double time = getTime(1);
+		RGB *read = readPPM(argv[1], width, height, max);
+		time = getTime(1)-time;
+		printf("reading file %s\n", argv[1]);
+		printf("*** %s read in %g seconds\n", argv[1], time);
+	
+	  double time1 = getTime(1);
+    RGB *denoise = denoiseImage(*width, *height, read, atoi(argv[3]), type);
+    time1 = getTime(1)-time1;
+		printf("\nProcesing %d x %d image using %s x %s window and mean filter...\n", *width, *height, argv[3], argv[3]);
+		printf("*** image processed in %g seconds\n", time1);
+	
+		double time2 = getTime(1);
+    writePPM(argv[2], *width, *height, *max, denoise);
+		time2 = getTime(1)-time2;
+		printf("\nWriting file %s\n", argv[2]);
+		printf("*** %s written in %g seconds\n", argv[2], time2);
+	return 0;
+	}
+	
+	
+	if ( strcmp(argv[4], "M") == 0 ){
+		
+		type = MEDIAN;
+		
+		double time = getTime(1);
+		RGB *read = readPPM(argv[1], width, height, max);
+		time = getTime(1)-time;
+		printf("reading file %s\n", argv[1]);
+		printf("*** %s read in %g seconds\n", argv[1], time);
+	
+	  double time1 = getTime(1);
+    RGB *denoise = denoiseImage(*width, *height, read, atoi(argv[3]), type);
+    time1 = getTime(1)-time1;
+		printf("\nProcesing %d x %d image using %s x %s window and median filter...\n", *width, *height, argv[3], argv[3]);
+		printf("*** image processed in %g seconds\n", time1);
+	
+		double time2 = getTime(1);
+    writePPM(argv[2], *width, *height, *max, denoise);
+		time2 = getTime(1)-time2;
+		printf("\nWriting file %s\n", argv[2]);
+		printf("*** %s written in %g seconds\n", argv[2], time2);
+	return 0;
+		
+	}
+  
+	return 0;
+}
+
+//argc is the number of command line arguments 
+//argv is an array of pointers to the argument strings

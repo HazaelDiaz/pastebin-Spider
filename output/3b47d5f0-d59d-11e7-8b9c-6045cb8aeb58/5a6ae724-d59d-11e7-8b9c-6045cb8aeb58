@@ -1,0 +1,239 @@
+Found path: /steamcmd/rust/RustDedicated
+Mono path[0] = '/steamcmd/rust/RustDedicated_Data/Managed'
+Mono config path = '/steamcmd/rust/RustDedicated_Data/Mono/etc'
+Preloaded 'libRakNet.so'
+Preloaded 'libRustNative.so'
+Preloaded 'libeac_server.so'
+Preloaded 'libeasyanticheat.so'
+Preloaded 'libsteam_api64.so'
+Preloaded 'steamclient.so'
+Unable to preload the following plugins:
+libRenderer.so
+Player data archive not found at `/steamcmd/rust/RustDedicated_Data/data.unity3d`, using local filesystem
+PlayerPrefs - Creating folder: /root/.config/unity3d/Facepunch Studios LTD
+PlayerPrefs - Creating folder: /root/.config/unity3d/Facepunch Studios LTD/Rust
+Initialize engine version: 2017.1.2f1 (cc85bf6a8a04)
+Forcing GfxDevice: Null
+NullGfxDevice:
+Version: NULL 1.0 [1.0]
+Renderer: Null Device
+Vendor: Unity Technologies
+AudioManager: Using Unknown: NoSound Driver
+Begin MonoManager ReloadAssembly
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Assembly-CSharp.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.UI.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.Networking.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.Timeline.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.Analytics.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/ConvexHull.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/ConvexHull.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/I18N.CJK.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/I18N.CJK.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/I18N.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/I18N.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/I18N.MidEast.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/I18N.MidEast.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/I18N.Other.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/I18N.Other.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/I18N.Rare.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/I18N.Rare.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/I18N.West.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/I18N.West.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Ionic.Zip.Reduced.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/LZ4.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/LZ4.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/EasyAntiCheat.Client.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/EasyAntiCheat.Client.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/EasyAntiCheat.Server.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/EasyAntiCheat.Server.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Console.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Console.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Input.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Input.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Network.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Network.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Raknet.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Raknet.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Rcon.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Rcon.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.System.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.System.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.UnityEngine.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.UnityEngine.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Rust.Data.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Rust.Data.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Rust.Global.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Rust.Global.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Rust.UI.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Rust.UI.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Rust.Workshop.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Rust.Workshop.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/websocket-sharp.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/websocket-sharp.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Steamworks.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Steamworks.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Unity.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Facepunch.Unity.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Newtonsoft.Json.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/ApexAI.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/ApexAI.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/ApexSerialization.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/ApexSerialization.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/ApexShared.dll (this message is harmless)
+Loading /steamcmd/rust/RustDedicated_Data/Managed/ApexShared.dll into Unity Child Domain
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/System.dll (this message is harmless)
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/System.Core.dll (this message is harmless)
+- Completed reload, in 0.825 seconds
+Shader 'Nature/Terrain/Diffuse': dependency 'AddPassShader' shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+Shader 'Hidden/TerrainEngine/Splatmap/Specular-AddPass': fallback shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+Shader 'Hidden/TerrainEngine/Splatmap/Standard-AddPass': fallback shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - Setting to default shader.
+UnloadTime: 29.596000 ms
+Bootstrap Startup
+System
+Name: da98b84e60fb
+OS: Linux 4.4 Ubuntu 16.04 64bit
+CPU
+Model: Intel(R) Xeon(R) CPU @ 2.30GHz
+Cores: 2
+Memory: 7479 MB
+GPU
+Model: Null Device
+API: NULL 1.0 [1.0]
+Memory: 128 MB
+SM: 30
+Process
+Priority: 0
+Threads: 0
+Memory: 121 MB
+Peak: 135 MB
+Mono
+Collects: 11
+Memory: 0 MB
+Manifest Metadata Loaded
+9726 pooled strings
+13 mesh colliders
+4531 prefab properties
+377 effect categories
+434 entity names
+84 skinnable names
+Command Line: "/steamcmd/rust/RustDedicated" "+server.saveinterval" "60" "+server.identity" "rust_test_server" "+server.seed" "12345" "+server.worldsize" "1000" "+server.hostname" "Rust Test Server" "+server.description" "Rust Test Server" "-logfile" "rust.log" "rust.log"
+server.saveinterval: "60"
+server.identity: "rust_test_server"
+server.seed: "12345"
+server.worldsize: "1000"
+server.hostname: "Rust Test Server"
+server.description: "Rust Test Server"
+Command 'logfile' not found
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/System.Configuration.dll (this message is harmless)
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/System.Xml.dll (this message is harmless)
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/System.Runtime.Serialization.dll (this message is harmless)
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/System.Xml.Linq.dll (this message is harmless)
+Platform assembly: /steamcmd/rust/RustDedicated_Data/Managed/Mono.Security.dll (this message is harmless)
+server.saveinterval: "60"
+server.identity: "rust_test_server"
+server.seed: "12345"
+server.worldsize: "1000"
+server.hostname: "Rust Test Server"
+server.description: "Rust Test Server"
+Command 'logfile' not found
+Server Config Loaded
+Manifest Assets Loaded
+84 skinnable objects
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+Unloading 5 Unused Serialized files (Serialized files now loaded: 63)
+UnloadTime: 6.472000 ms
+Generating terrain of size 1000 with seed 12345
+Floating point textures aren't supported on this device (Main Camera (UnityStandardAssets.CinematicEffects.TonemappingColorGrading))
+Couldn't open /steamcmd/rust/RustDedicated_Data/Plugins/x86_64/libRenderer.so, error: /steamcmd/rust/RustDedicated_Data/Plugins/x86_64/libRenderer.so: undefined symbol: glXGetProcAddressARB
+Fallback handler could not load library /steamcmd/rust/RustDedicated_Data/Mono/x86_64/Renderer
+[AmplifyOcclusion] Null graphics device detected. Skipping effect silently.
+Unloading 1047 unused Assets to reduce memory usage. Loaded Objects now: 25286.
+Total: 175.335000 ms (FindLiveObjects: 1.383000 ms CreateObjectMapping: 1.403000 ms MarkObjects: 166.309000 ms DeleteObjects: 6.238000 ms)
+[0.4s] Topology Map
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+[11.1s] Harbors
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+[0.7s] Ice Lakes
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+[19.4s] Large Monuments
+[1.4s] Small Monuments
+[6.1s] Caves
+[41.6s] Procedural Generation
+Starting Navmesh Source Collecting.
+Calling CollectSourcesAsync took 2.455429
+Starting Navmesh Build with 1971 sources
+27%
+35%
+44%
+60%
+71%
+Navmesh Build took 1.51 seconds
+Map Spawned 12 entities
+Couldn't load server/rust_test_server/proceduralmap.1000.12345.153.sav - file doesn't exist
+Missing EnvSync - creating
+Missing CommunityEntity - creating
+Missing ResourceDepositManager - creating
+Initializing 569 entity links
+done.
+Initializing 5 stability supports
+done.
+Initializing 301 entity save caches
+done.
+Facepunch.Steamworks Unity: LinuxPlayer
+Facepunch.Steamworks Os: Linux
+Facepunch.Steamworks Arch: x64
+Connected to Steam
+Server startup complete
+Saved 301 ents, serialization(0.00), write(0.00), disk(0.00) totalstall(0.01).
+Saving complete

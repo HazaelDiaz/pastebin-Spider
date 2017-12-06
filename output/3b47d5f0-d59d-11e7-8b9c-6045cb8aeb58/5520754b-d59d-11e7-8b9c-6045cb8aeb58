@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aaronsantamaria.afimoviesandfandango.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="78dp"
+        android:text="Welcome!
+
+In 1998 the American Film Institute (AFI) polled American film industry professionals for their top 100 films of the 20th century. The resulting list is known as the AFI 100.
+
+Click the button to display some films."
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVis"
+        android:layout_width="358dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="325dp"
+        android:text="Please select a film! Tap on it!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:visibility="invisible"
+        android:onClick="onClickmyTextView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.32999998">
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="onClickmyTextView1"
+                android:text=""
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="149dp" />
+
+            <TextView
+                android:id="@+id/filmOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClickmyTextView1"
+                android:text="@string/filmTitleOne"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="149dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="onClickmyTextView2"
+                android:text=""
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="149dp" />
+
+            <TextView
+                android:id="@+id/filmTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClickmyTextView2"
+                android:text="@string/filmTitleTwo"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="149dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="onClickmyTextView3"
+                android:text=""
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="250dp" />
+
+            <TextView
+                android:id="@+id/filmThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClickmyTextView3"
+                android:text="@string/filmTitleThree"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="250dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="onClickmyTextView4"
+                android:text=""
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="349dp" />
+
+            <TextView
+                android:id="@+id/filmFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClickmyTextView4"
+                android:text="@string/filmTitleFour"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="349dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick="onClickmyTextView5"
+                android:text=""
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="450dp" />
+
+            <TextView
+                android:id="@+id/filmFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="onClickmyTextView5"
+                android:text="@string/filmTitleFive"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="450dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="395dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/selectRandomFilm"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.454" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

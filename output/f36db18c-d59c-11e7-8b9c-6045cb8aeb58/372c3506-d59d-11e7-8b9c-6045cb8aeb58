@@ -1,0 +1,30 @@
+<div onClick="this.redirect">
+    <div>item 1</div>
+    <div>item 2</div>
+    <div>
+        item 3
+        <div>subItem 1</div>
+        <div>subItem 2</div>
+        <button onClick={this.btnClick}>click me</button>   
+    </div>  
+</div>
+	
+btnClick(event){
+    event.stopPropagation(); //will prevent the click from propagating to parent
+    //stuff here
+  }
+
+  render() {
+    return (
+        <div onClick={// redirection logic here}>
+          <div>item 1</div>
+          <div>item 2</div>
+          <div>
+            item 3
+            <div>subItem 1</div>
+            <div>subItem 2</div>
+            <button onClick={this.btnClick}>click me</button>
+          </div>
+        </div>
+    );
+  }

@@ -1,0 +1,16 @@
+X_input = keras.Input((2,))
+X = keras.layers.BatchNormalization(axis=1)(X_input)
+model1 = keras.Model(inputs=X_input, outputs=X)
+	
+a = np.arange(4).reshape((2,2))
+print('a=')
+print(a)
+print('output=')
+print(model1.predict(a,batch_size=2))
+	
+a=
+array([[0, 1],
+   [2, 3]])
+output=
+array([[ 0.        ,  0.99950039],
+   [ 1.99900079,  2.9985013 ]], dtype=float32)

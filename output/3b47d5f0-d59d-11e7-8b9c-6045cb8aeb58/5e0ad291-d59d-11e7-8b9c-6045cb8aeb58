@@ -1,0 +1,26 @@
+$params = array_merge(array(
+        "hub_mode" => null,
+        "hub_verify_token" => null,
+        "hub_challenge" => null
+    ),$_GET);
+		
+/* log params neu can
+$file = fopen(__DIR__ . "/test.log","a+");
+if($file){
+	fwrite($file, json_encode($params) . "\n");
+	fclose($file);
+}*/
+		
+if ($params["hub_mode"] && $params["hub_verify_token"]){
+	if ($params["hub_mode"] == 'subscribe' && $params["hub_verify_token"] == "123456") {
+		// Responds with the challenge token from the request
+		echo $params["hub_challenge"];die;
+			
+	} else {
+		// Responds with '403 Forbidden' if verify tokens do not match
+		header('HTTP/1.0 403 Forbidden');    
+	}
+}else{
+	header('HTTP/1.0 403 Forbidden');
+	echo '403 Forbidden';
+}

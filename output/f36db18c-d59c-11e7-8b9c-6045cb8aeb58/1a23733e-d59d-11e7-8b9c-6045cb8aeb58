@@ -1,0 +1,94 @@
+<name>[COLOR lime]WARNING!! THIS IS A RESTRICTED AREA YOU DON'T BELONG HERE, AND YOU HAVE BEEN CAUGHT TRYING TO SNOOP ON OUR CONTENT, PLEASE REFRAIN FROM DOING SO [/COLOR]</name>
+
+<channel>
+<name>[COLOR yellow]WELCOME TO LCC'S[/COLOR]  [COLOR red][B]***SURVIVOR***[/B][/COLOR]</name>
+<link>SURVIVOR</link>
+<thumbnail>http://laredocordcutters.com/lcciptv/icon.png</thumbnail>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</channel>
+
+<channel>
+<name>[COLOR orange]FOLLOW US FACEBOOK.COM/LAREDOCC[/COLOR]</name>
+<link>SURVIVOR</link>
+<thumbnail>http://laredocordcutters.com/lcciptv/icon.png</thumbnail>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</channel>
+
+<plugin>
+<name>[COLOR white]---------------------------------------------------------[/COLOR]</name>
+<link></link>
+<thumbnail>http://laredocordcutters.com/lcciptv/survivorback.jpg</thumbnail>
+</plugin>
+
+
+<dir>
+<name>[COLOR lime]*[COLOR cyan] FREE LIVE TV [COLOR yellow] STILL GOING BECAUSE WE LOVE YOU! ONLINE [COLOR lime]*[/COLOR]</name>
+<thumbnail>http://laredocordcutters.com/lcciptv/livetvicon3.png</thumbnail>
+<link>http://laredocordcutters.com/lcciptv/livetv.xml</link>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR yellow]SURVIVOR[/COLOR]  [COLOR red][B]MOVIES[/B][/COLOR]</name>
+<thumbnail>http://laredocordcutters.com/lcciptv/newmoviesicon.png</thumbnail>
+<link>http://laredocordcutters.com/lcciptv/SCRAPEMOVIES.txt</link>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR yellow]SURVIVOR[/COLOR]  [COLOR red][B] TV SHOWS [/B][/COLOR]</name>
+<thumbnail>http://laredocordcutters.com/lcciptv/newmoviesicon.png</thumbnail>
+<link>http://laredocordcutters.com/lcciptv/tvshowmenu.xml</link>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR yellow]SURVIVOR[/COLOR]  [COLOR red][B]ESPANOL ANDELE![/B][/COLOR]</name>
+<thumbnail>http://laredocordcutters.com/lcciptv/espanol.png</thumbnail>
+<link>http://laredocordcutters.com/lcciptv/spanishmenu.xml</link>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR yellow]Christian[/COLOR]   [COLOR lime][B]Live[/B][/COLOR]</name>
+<thumbnail>http://laredocordcutters.com/lcciptv/cross.png</thumbnail>
+<link>http://laredocordcutters.com/lcciptv/christian.xml</link>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR yellow]SURVIVOR[/COLOR]  [COLOR red][B]KIDS[/B][/COLOR]</name>
+<thumbnail>http://laredocordcutters.com/lcciptv/kids.png</thumbnail>
+<link>http://laredocordcutters.com/lcciptv/kids.xml</link>
+<fanart>http://laredocordcutters.com/lcciptv/survivorback.jpg</fanart>
+</dir>
+
+<dir>
+<name>[COLOR yellow]Fitness[COLOR]</name>
+<thumbnail>http://i.imgur.com/DG9nZoR.png</thumbnail>
+<link>https://pastebin.com/raw/P2MfyMAW</link>
+</dir>
+
+<plugin>
+<name>[COLOR lime][B]LAUNCH SURVIVOR PRO STREAMS[/B][/COLOR]</name>
+<link>plugin://plugin.video.survivorpro</link>
+<thumbnail>http://laredocordcutters.com/lcciptv/survivorback.jpg</thumbnail>
+</plugin>
+
+<plugin>
+<name>[B][COLOR yellow]Search Sections[/COLOR][/B]</name>
+<link>plugin://plugin.video.survivor/?action=searchNavigator</link>
+<thumbnail>https://cdn2.iconfinder.com/data/icons/blue-bits-basic-and-bonus/256/011.png</thumbnail>
+</plugin>
+
+<plugin>
+<name>[B][COLOR snow]Clear Cache DB[/COLOR][/B]</name>
+<link>plugin://plugin.video.survivor/?action=clearCache1</link>
+<thumbnail>https://gunwebsystems.com.au/gwswp/wp-content/uploads/2016/08/clear-cache-icon.png</thumbnail>
+</plugin>
+
+<plugin>
+<name>[B][COLOR aqua]Settings[/COLOR][/B]</name>
+<link>plugin://plugin.video.survivor/?action=openSettings</link>
+<thumbnail>https://lh4.ggpht.com/lr2V4wwrZLPzxvAsR0OgwkZ1Ja8HXVRUes0N8fjlCVrKjfjtJK_WKkGYs6uFX0HKtk5M=w300</thumbnail>
+</plugin>gin>

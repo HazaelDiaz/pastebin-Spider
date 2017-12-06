@@ -1,0 +1,37 @@
+heheh sry2 mas, saya udah ngantuk jadi blom sempet jabarin ke masnya.
+
+Jadi, di single.php AMPnya
+saya mau manggil untuk nampilin konten yang ada di WP bagaimana yah mas ?
+
+Contoh kode manggil konten di plugin AMP mas :
+<div amp-access="">
+			<?php $where = 3;
+						$content = apply_filters("the_content", get_the_content());
+						$content = explode("</p>", $content);
+						$content = preg_replace("'.$fixreplace1.'", " ", $content);
+						$content = preg_replace(\' '.$fixreplace2.' \', '.$fixreplace4.', $content);
+						$content = preg_replace("/<iframe.*?>/", "Konten Video tersedia di <a target=\'_blank\' href=\'".get_the_permalink()."\'>".get_the_title()."</a>", $content);
+						$content = str_replace("]]>", "]]>", $content);
+						for ($i = 0; $i <count($content); $i++) {
+							if ($i == $where) {;?>';
+							if(!empty($adsid) && !empty($adslot)){
+							$konten.= '<div class="ad">
+								<amp-ad class="fixed-height" width="300" height="250" type="adsense" data-ad-client="<?php echo get_option("zaenu_adsenseid")?>" data-ad-slot="<?php echo get_option("zaenu_adsenseslot")?>" data-amp-slot-index="0">
+									<div placeholder>
+									</div>
+								</amp-ad>
+							</div>';
+							}
+							$konten.='<?php }
+							echo $content[$i] . "</p>";
+							};?>
+		</div>
+
+Nah di kode mas di atas, postingan tidak muncul semua yang ada di blog saya. 
+
+Nah kalau saya, mau custom pemanggilan untuk tampilin konten itu gimana yah mas ? dan..
+
+di thread mas buat, saya gagal tuh ngikutin petunjuk masnya, tidak tampil apa2 karena saya blom tau munculin tampilan konten di AMPnya.
+
+Maka itu saya minta ke masnya untuk bisa lebih jelasin lagi hehehe :D
+matu suwun.

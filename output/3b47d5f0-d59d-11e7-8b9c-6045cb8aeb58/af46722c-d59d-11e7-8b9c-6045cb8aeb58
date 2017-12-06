@@ -1,0 +1,68 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+struct birthDate{
+	int den, mes, god;
+};
+
+struct Hospital{
+	char name[30];
+	char diagnose[50];
+	birthDate date;
+	int daysInHospital;
+};
+
+void Input(int n, Hospital pacient[]){
+	for(int i = 0; i < n; i++){
+		cin.get();
+		 cout<<"\nVavedi imeto na pacienta: ";
+		cin.getline(pacient[i].name, 30);
+		 cout<<"\nVavedi diagnosata: ";
+		cin.getline(pacient[i].diagnose, 50);
+		 cout<<"\nVavedi den: ";
+		cin>>pacient[i].date.den;
+		 cout<<"\nVavedi mesec: ";
+		cin>>pacient[i].date.mes;
+		 cout<<"\nVavedi godina: ";
+		cin>>pacient[i].date.god;
+		 cout<<"\nVavedi dnite na prestoi: ";
+		cin>>pacient[i].daysInHospital;
+	}
+}
+
+void Output(int n, Hospital pacientOut[]){ 
+	 cout<<endl;
+	int maxDays;
+	char bolest[40];
+	cout<<"\nVaVedi tursenata bolest: ";
+	cin>>bolest;
+	for(int i = 0; i < n; i++){
+		 if(strcmp(pacientOut[i].diagnose, bolest) == 0){
+		 	 cout<<"Pacient: "<<pacientOut[i].name<<" e bolen ot "<<bolest<<endl;
+		 }
+		 else if(pacientOut[i].date.god > 1960) {
+		 	 cout<<"Pacient "<<pacientOut[i].name<<" e roden sled 1960 godina"<<endl;
+		 }
+		 else if(pacientOut[0].daysInHospital > pacientOut[i].daysInHospital){
+		 		maxDays = pacientOut[0].daysInHospital;
+		 }
+		 else{
+		 	maxDays = pacientOut[i].daysInHospital;
+		 }
+	}
+	 cout<<"Max dni prestoi: "<<maxDays;
+}
+
+int main(){
+	int n;
+	Hospital pac[10];
+	char bolest[40];
+	 cout<<"\nVavedete broq na pacienite: ";
+	cin>>n;	 	 
+	Input(n, pac);	 
+	system("cls");
+	Output(n, pac);
+	
+	return 0;
+}

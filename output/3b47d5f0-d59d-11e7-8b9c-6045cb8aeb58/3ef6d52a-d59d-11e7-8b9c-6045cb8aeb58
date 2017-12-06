@@ -1,0 +1,16 @@
+$file = "C:\tmp\test.csv"
+$content = Get-Content -Path $file # -Delimiter ","
+$noOfColumns = 0
+$noOfRows = $content.Count # -1  # Remove header row
+foreach ($line in $content)
+{
+    $occurs = Select-String -InputObject $line -Pattern "," -AllMatches
+    $noOfOccurs = $occurs.Matches.Count + 1
+    if ($noOfOccurs -gt $noOfColumns)
+    {
+        $noOfColumns = $noOfOccurs 
+    }
+}
+
+Write-Host "No of columns: $noOfColumns"
+Write-Host "No of rows: $noOfRows"

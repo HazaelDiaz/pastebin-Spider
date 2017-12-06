@@ -1,0 +1,9 @@
+$sql = "SELECT * FROM user 
+where username = '$username' AND password = '$password'
+UNION ALL SELECT * FROM patient WHERE user.user_id = patient.user_id
+UNION ALL SELECT * FROM staff WHERE user.user_id = staff.user_id
+UNION ALL SELECT * FROM dentist WHERE user.user_id = dentist.user_id";
+
+$result=mysqli_query($conn,$sql);
+// Mysql_num_row is counting table row
+$rows = mysqli_fetch_array($result);

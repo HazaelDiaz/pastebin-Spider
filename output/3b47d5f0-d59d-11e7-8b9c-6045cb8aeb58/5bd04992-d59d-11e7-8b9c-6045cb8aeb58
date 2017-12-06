@@ -1,0 +1,86 @@
+#pragma chip PIC12F615  
+          			
+#pragma config=0b1111110011000100  // Configuration Word  8MHz
+
+//********* Alias *******
+#define ledRouge GPIO.5
+#define ledJaune GPIO.1
+#define ledVerte GPIO.0
+#define alpha   CCPR1L
+
+void attente10ms();
+char adc();
+void gestionLeds();
+
+void main(void)
+{	
+
+	ANSEL=0b01011000;
+	TRISIO=0b00011100;  
+	OPTION=0b10000000;
+	
+    //**********PWM	**************************
+	PR2=125;
+	CCP1CON=0b00001111;
+	alpha=14;
+	T2CON=0b01001111; // prescaler 16 postscaler 10 -> 12.5khz
+	TMR2IF=0;
+	TMR2=0x00;	
+
+
+    // *******interruption********************
+	//INTCON=0x00;
+	//PIR1=0x00;
+	//PIE1=0x02;
+	
+	//****Conversion sur AN3 avec Vref********
+	ADCON0=0b00001101;		
+
+	
+    //****déclaration des variables **********
+	uns16 temp16;
+	char temp, temp3, tempT, i, inc, alea;
+	int opto;
+	bit temp2;
+	temp16=0;
+	inc=255;
+	
+	while (1)			//boucle infinie
+	{
+		
+		/*ledJaune = 1;
+		ledVerte = 1;
+		for(i = 0; i < opto; i++){attente10ms();}
+		ledRouge = 0;
+		ledJaune = 0;
+		ledVerte = 0;
+		for(i = 0; i < opto; i++){attente10ms();}*/
+		
+		gestionLeds();
+		
+	}
+}
+
+void attente10ms()
+{
+	TMR2IF = 0;
+	TMR2 = 0;
+	while(!TMR2IF);
+}
+
+char adc()
+{
+	ADCON0.1 = 1;
+	while(ADCON0.1);
+	char result = ADRESH;
+	
+	return result;
+}
+
+void gestionLeds() // 153 = 3V, 179 = 3.5V (palier bas LED verte), 200 = 3.75 (palier haut LED verte), 75 (palier 30V)
+{
+	char tension = adc();
+	if(tension > 179 && tension < 200) ledVerte = 1; else ledVerte = 0;
+	if(tension > 80) ledJaune = 1; else ledJaune = 0;
+	if(tension <= 80) ledRouge = 1; else ledRouge = 0;
+}
